@@ -1,0 +1,39 @@
+Название: Расскажи про МЕСТО
+ID: tell_about_place
+Тесты: 
+расскажи про башню
+расскажи о башне
+о воротах
+около башни
+у башни
+я около башни
+
+Грамматика:
+slots:
+    place:
+        source: $Place
+        type: Place
+root:
+    $Who? $Tell? $About? $Place
+    $Who? $Tell? $About $Unknown_place
+$Who:
+    %lemma
+    я
+    мы
+    они
+    она
+$Tell:
+    %lemma
+    расскажи
+    давай
+    поведай
+    около
+    возле
+$About:
+    про
+    о
+    об
+    у
+    $Tell
+$Unknown_place:
+ .+

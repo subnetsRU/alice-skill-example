@@ -1,0 +1,7 @@
+entity Place:
+    lemma: true
+    values:
+        tower:
+            [спасская? башня]
+        cathedral:
+            [софийский? собор]
